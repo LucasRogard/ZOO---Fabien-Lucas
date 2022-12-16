@@ -1,0 +1,8 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Modifier les informations de {{ animal.Nom }}{% endblock %}
+
+{% block body %}
+    <h1>Modifier les informations de <i>{{ animal.Nom }}</i></h1>
+    {{ form(formulaire) }}
+{% endblock %}

@@ -1,0 +1,9 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Supprimer un Enclos{% endblock %}
+
+{% block body %}
+    <h1>Supprimer l'Enclos' <i>{{ enclos.nom }} ?</i></h1>
+    {{ form(formulaire) }}
+    <a href="{{ path("app_enclos_voir", {"idEspace": idEspace}) }}" class="btn btn-default">Retour</a>
+{% endblock %}
